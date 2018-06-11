@@ -198,8 +198,6 @@
 	{% endblock %}
 
 	{% block footer %}
-        <div class="head">
-		</div>
 	    <div class="nkfooter">
 		<div class=" ">
 			<div class="container-fluid col-lg-12 " style="margin-top: 20px; ">
@@ -245,7 +243,7 @@
 	{% block scripts %}
 	<script type="text/javascript">
 			$(window).scroll(function() {
-			if ($(this).scrollTop() < 100) {
+			if ($(this).scrollTop() < 10) {
 
 			$(".nkfooter").slideUp();
 
