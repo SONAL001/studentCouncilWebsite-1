@@ -75,6 +75,24 @@
               height:155px;
               width:100%;
             }
+            .pr-detail:hover .detail{
+                text-align:center;
+                display:inline-block !important;
+            }
+            .pr-detail:hover p{
+                width: 190px;
+                word-wrap: break-word !important;
+            }
+            .pr-detail:hover .only-img{
+                background-color:#a5c6ff;
+                box-shadow: 0 10px 15px #ddd;
+                position:absolute;
+                z-index:1;
+            }
+            .detail {
+                display:none;
+            }
+
             .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
                 color: #495057 !important;
 
@@ -109,7 +127,7 @@
 	      					<div class="dropdown-menu">
 	        					<a class="dropdown-item text-info" href="#">Message from the President</a>
 	        					<div class="dropdown-divider"></div>
-	        					<a class="dropdown-item text-info" href="represent/">Meet the Representatives</a>
+	        					<a class="dropdown-item text-info" href="{% url 'represent' %}">Meet the Representatives</a>
 	        					<div class="dropdown-divider"></div>
 					        	<a class="dropdown-item text-info" href="#">Announcements</a>
 	        					<div class="dropdown-divider"></div>
@@ -170,8 +188,6 @@
   					</div>
 				</div>
 			</nav>
-
-
 		</div>
 	{% endblock %}
 

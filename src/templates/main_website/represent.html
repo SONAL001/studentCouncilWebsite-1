@@ -1,16 +1,17 @@
 {% extends "main_website/base.html" %}
 		{% load static %}
-            {% block breadcrumb %}
-            <div>
+		{% block breadcrumb %}
+		<div>
 				<ul class="breadcrumb" >
 					<li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-dark font-weight-bold"  style="text-decoration:none">&nbsp;&nbsp;&nbsp;Home</a></li>
-					<li class="breadcrumb-item"><a href="{% url 'represent' %}" class="text-dark font-weight-bold"  style="text-decoration:none">Represent</a></li>
+					<li class="breadcrumb-item"><a href="#"></a></li>
 				</ul>
-			</div>
-	        {% endblock %}
+		</div>
+		{% endblock %}
 
-            {% block content %}
-                <div class="container rounded" style="margin-top: 20px;padding-top: 15px;background-color: #19191942;;">
+		{% block content %}
+			{%load static%}
+		<div class="container rounded" style="margin-top: 20px;padding-top: 15px;background-color: #19191942;;">
             <nav>
                 <div class="nav nav-tabs " id="nav-tab" role="tablist">
                     <a class="col-lg-1"></a>
@@ -243,9 +244,4 @@
             </div>
 
         </div>
-	        {% endblock %}
-
-
-
-
-
+		{% endblock %}
