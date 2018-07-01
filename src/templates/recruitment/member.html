@@ -1,0 +1,19 @@
+{% extends "recruitment/login_base.html" %}
+{% block title %}
+MEMBER NAME
+{% endblock%}
+{% block content%}
+
+{%if error %}
+<strong>{{error}}</strong>
+{% else %}
+<div class="container" style="padding-top:20px;">
+        <div style="text-align:center;">
+            <h1 style="color:#222334; font-size:50px;" >Resumes ToBe Evaluate</h1>
+            <h1>{{Name}}</h1>
+            <h1>{{Rollno}}</h1>
+        </div>
+</div>
+{% endif %}
+
+{% endblock%}

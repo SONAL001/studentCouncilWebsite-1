@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% block html %}
+<html lang="en" class="bg-nitk">
+{% endblock html %}
+
+{% load staticfiles %}
+    <head>
+    <title>{% block title %}
+    {% endblock title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Custom styles for this site -->
+	{% block styles %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Iceland">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Signika:600">
+        <style>
+            .navbar .a:hover {
+  		     color:white;
+  		     border-bottom: solid;
+
+		    }
+        </style>
+	{% endblock styles %}
+
+
+	{% block extrahead %}
+    {% endblock extrahead %}
+</head>
+    <body >
+	{% block navbar %}
+        <div class="navbar navbar-fixed-top alt justify-content-between" data-spy="affix" data-offset-top="1000" style="background-color:#222334;padding-left:200px;">
+
+            <div class="col-lg-4" >
+            <div class="a  nav-item" style="display:inline-flex;padding: 0px 5px 4px 2px;">
+                <a class="" style="color:white;font-size:17px; text-decoration:none;" href="{%url 'home'%}"> Student Council </a>
+            </div>
+                <div class="a nav-item" style="display:inline-flex;padding: 0px 5px 4px 2px;">
+            <a class="" style="color:white;font-size:17px;text-decoration:none;" href="../recruitment"> Recruitment </a>
+                </div>
+                <div class="a nav-item" style="display:inline-flex;padding: 0px 5px 4px 2px;">
+            <a class="" style="color:white;font-size:17px;text-decoration:none;"> Club-Name </a>
+                </div>
+            </div>
+
+            <div class="col-lg-1 " style="display:inline-flex;">
+            <a href="{% url 'resume_ie'%}" class="a"  style="color:white;font-size:17px;text-decoration:none;padding: 0px 5px 4px 2px;">Apply !</a>
+            </div>
+
+        </div>
+	{% endblock %}
+
+
+
+	{% block content %}
+	{% endblock %}
+
+
+
+	<!--  Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'main_website/js/typewriter.js' %}"></script>
+
+	{% block scripts %}
+
+	{% endblock scripts %}
+
+</body>
+</html>

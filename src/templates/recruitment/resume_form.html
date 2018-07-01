@@ -1,0 +1,92 @@
+{% extends "recruitment/base.html" %}
+{% block title %}
+Resume form
+{% endblock%}
+    {%block content%}
+    <div class="container" style="padding-top:20px;">
+        <div style="text-align:center;">
+            <h1 style="color:#222334; font-size:50px;" >Condidate Resume Form</h1>
+        </div>
+
+        <div class="container">
+
+                 <form autocomplete="off">
+                     <div class="form-group">
+                         <label >Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Name" autocomplete="off">
+                    </div>
+                     <div class="form-group">
+                         <label >Roll Number * (eg. 16CO102)</label>
+                        <input type="text" class="form-control" id="rollno" placeholder="Roll No">
+                    </div>
+                     <div class="form-group">
+                         <label >Phone number(SMS/calls) *</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Phone No.">
+                    </div>
+                    <div class="form-group">
+                        <label >E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                     <div class="form-group">
+                        <label >Why are you looking to join a technical club and why specifically IE? *</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >What Core SIG would you like to be a part of? *</label>
+                        <select class="form-control">
+                            <option>******</option>
+                            <option>Code</option>
+                            <option>Gadget</option>
+                            <option>Garage</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label >Any other Core SIG you would like to be a part of, if any?</label>
+                        <select class="form-control">
+                            <option>*******</option>
+                            <option>Code</option>
+                            <option>Gadget</option>
+                            <option>Garage</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label >Write a short description about any interesting projects you have worked on,if any.</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >Answer this question if you are interested in Script SIG - Invent something, describe what it does, and why you made it. It shouldn't be drawn, and it doesn't have to be scientifically realistic, just something that doesn't exist in day to day life. (Ex: Pillow speakers, to listen to music while sleeping, without the earphones poking my ears)</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >Are you ready to challenge yourself to our robotics problem statement? (YES/NO) If Yes you will receive an email with the question before your Interview
+</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >Have you participated in any IE events last year? How was your experience? *</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >Are you interested in Video Editing, Poster Designing? If yes, then which software/tools do you use?</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >If you were a brand, what would be your motto? Convince us that you are valuable. *</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label >Tell us what thoughts come to mind when you see the picture below. *</label>
+                         <textarea class="form-control" id="q1" rows="5" placeholder="Your Answer"></textarea>
+                    </div>
+                     <h1>*ADD IMAGE*</h1>
+
+                    <div style="text-align:center;">
+                        <button type="submit" class="btn btn-primary" style="font-size:20px;">Submit</button>
+                    </div>
+
+                 </form>
+        </div>
+    </div>
+
+{% endblock %}
+

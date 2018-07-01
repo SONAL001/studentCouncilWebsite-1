@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'website',
     'main_website.apps.MainWebsiteConfig',
     'users_auth.apps.UsersAuthConfig',
+    'recruitment.apps.RecruitmentConfig',
 ]
 
 MIDDLEWARE = [
